@@ -72,4 +72,4 @@ app.post('/voice', async (req, res) => {
 app.get('/', (req, res) => res.send('BerryBlue server is running 🫐'));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`BerryBlue server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`BerryBlue server running on port ${PORT}`));
